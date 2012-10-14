@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Documentation | Cascadable: A Light &amp; Flexible Front-end Framework from Getable</title>
+    <meta name="description" content="Built at Getable by @bennycreative, Cascadable is a light and flexible, open-source front-end framework that utilizes efficiently-written CSS3 for faster web development.">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="cui">
+<!--[if lt IE 7]>
+<p class="chromeframe">Your browser is extremely out of date. <a href="http://browsehappy.com/">Please update it now</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+    
+<header id="topbar" role="header">
+    <h2><a href="http://www.getable.com/" target="_blank"><span>Getable</span></a>Cascadable<em>&nbsp;beta</em></h2>
+    <nav id="top-nav" role="navigation">
+        <a href="../index.html">Get Started</a>
+        <a href="index.html" class="active">Docs</a>
+    </nav>
+</header>
+<div class="clear"></div>
+    
+<nav id="cascadable" role="navigation">
+    <strong>Basic Elements</strong>
+    <a href="#buttons">Buttons</a>
+    <a href="#forms">Forms</a>
+    <a href="#dividers">Dividers</a>    
+    <a href="#headings">Headings</a>
+    <a href="#paragraphs">Paragraphs</a>     
+    <a href="#phrases">Phrases</a>    
+    <a href="#formatting">Formatting</a>
+    <strong>Grids &amp; Layout</strong>
+    <a href="#columns">Columns</a>
+    <a href="#containers">Containers</a>
+</nav>
+    
+<div class="cui cui-column-a cui-page-wrap" id="elements" role="main">
+    <aside class="cui cui-column-b" id="welcome" role="contentinfo">
+        <h2>Documentation</h2>
+        <div class="clear"></div>
+        <h1>Cascadable UI <span>1.0.0</span></h1>
+        <p>
+            This framework is a collection of HTML and CSS components that leverages modern browser capabilities to provide developers with baselines for semantical typography, forms, buttons, containers, and grids. Cascadable is a <a href="http://www.github.com/getable/cascadable" target="_blank">Github Project</a>.
+        </p>
+    </aside>
+    <div class="clear"></div>
+    
+    <h4 class="cui">Basic Elements</h4>
+    <hr class="cui">
+    <div class="cui cui-column-c">
+        <h3 class="demo-heading" id="buttons">Buttons, Input, &amp; Links</h3>
+        <button class="cui">Button</button>
+        <input class="cui" type="button" value="Input Button">
+        <input class="cui" type="submit" value="Form Submit">
+        <a class="cui cui-button-style" href="#">Link Button</a>
+        <button class="cui cui-secondary">Button 2</button>
+        <a class="cui cui-button-style cui-secondary" href="#">Link Button 2</a>
+        <hr class="cui">            
+        <button class="cui cui-button">Cascadable Button</button>
+        <input class="cui cui-button" type="button" value="Cascadable Input">
+        <input class="cui cui-button" type="submit" value="Cascadable Submit">
+        <a class="cui cui-button cui-button-style" href="#">Cascadable Link</a>
+        <hr class="cui">            
+        <button class="cui cui-button-cta">Call-to-Action Button</button>
+        <a class="cui cui-button-cta cui-button-style" href="#">Call-to-Action Link</a>
+        <hr class="cui">
+        <p class="cui cui-full">
+            Use full-width buttons (as demonstrated below) to span the entire width of a grid column or container (e.g. <code>&lt;aside&gt;</code> or <code>&lt;div&gt;</code>).
+        </p>
+        <p class="cui">
+            <button class="cui cui-button-cta cui-full">Full-width Call-to-Action</button>
+            <button class="cui cui-full">Full-width Button</button>
+        </p>
+        <aside class="cui cui-container cui-column-c">
+            <hgroup>
+                <h5 class="cui">Aside Container</h5>
+            </hgroup>
+            <section class="cui">
+                <p class="cui">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button class="cui cui-secondary cui-full">Full-width Button</button>
+                <input class="cui cui-full" type="button" value="Full-width Input">
+            </section>
+        </aside>
+        <div class="clear"></div>
+        <div class="cui cui-container cui-column-e">
+            <hgroup>
+                <h5 class="cui">Div Container</h5>
+                <button class="cui cui-container-toggle">-</button>
+            </hgroup>
+            <section class="cui">
+                <form class="cui">
+                    <label for="textSidebar">Sidebar Text:</label>
+                    <input type="text" name="textSidebar" id="textSidebar" placeholder="Placeholder text.">
+                </form>
+                <input class="cui cui-button cui-full" type="submit" value="Full-width Submit">
+            </section>
+        </div>
+        <aside class="cui cui-container cui-column-e">
+            <hgroup>
+                <h5 class="cui">Aside Container</h5>
+                <button class="cui cui-container-toggle">-</button>
+            </hgroup>
+            <section class="cui">
+                <p class="cui">
+                    Paragraph text.
+                </p>
+                <form class="cui">
+                    <label>Sidebar Checkbox:</label>
+                    <input name="checkSidebar" type="checkbox" value="1" id="checkSidebar">
+                    <label for="checkSidebar">Checkbox</label>
+                </form>
+                <a class="cui cui-button-style cui-full" href="#">Full-width Anchor</a>                
+            </section>
+        </aside>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="cui cui-column-c">
+        <h3 class="demo-heading" id="forms">Forms &amp; Selection</h3>
+        <form class="cui">
+            <fieldset>
+                <legend>Form Title <span>(XHTML 1.0+ / HTML 3.2+)</span></legend>
+                <label for="textInput">Text Field:</label>
+                <input type="text" name="textInput" id="textInput">
+                <label for="textArea">Multi-line Text Field:</label>
+                <textarea name="textArea" id="textArea">Pre-populated text here.</textarea>
+                <label>Checkboxes:</label>
+                <input name="checkBoxOne" type="checkbox" value="1" id="checkBoxOne">
+                <label for="checkBoxOne">Checkbox 1</label>
+                <input name="checkBoxTwo" type="checkbox" value="2" id="checkBoxTwo">
+                <label for="checkBoxTwo">Checkbox 2</label>
+                <label>Radio Buttons:</label>
+                <input type="radio" name="groupOne" id="radioOne" value="Option 1">
+                <label for="radioOne">Option 1</label>
+                <input type="radio" name="groupOne" id="radioTwo" value="Option 2" checked>
+                <label for="radioTwo">Option 2</label>
+                <label for="dropdown">Dropdown Menu:</label>
+                <select name="dropdown">
+                    <option>Dropdown Item 1</option>
+                    <option>Dropdown Item 2</option>
+                </select>
+            </fieldset>
+        </form>
+        <form class="cui">
+            <fieldset>
+                <legend>Form Title <span>(HTML 5.0+)</span></legend>
+                <label for="textInput2">Text Field 2.0:</label>
+                <input type="text" name="textInput2" placeholder="Placeholder text goes here.">
+                <label for="autoCompList">Auto-complete Input:</label>
+                <input list="autoCompList" name="autoCompList" placeholder="Start typing... (Item 1, Item 2, etc.)">
+                    <datalist id="autoCompList">
+                        <option value="Item 1">
+                        <option value="Item 2">
+                        <option value="Item 3">
+                    </datalist>
+                </input>
+                <label for="range">Webkit Range:</label>
+                <input type="range" name="range" min="0" max="10" step="1">
+                <label for="email"><em class="cui-req">&#9733;&nbsp;&nbsp;</em>Email Input:</label>
+                <input type="email" name="emailInput" required="" placeholder="email@example.com">
+            </fieldset>
+        </form>
+        <p class="cui cui-full">
+            <label><em class="cui-req">&#9733;&nbsp;&nbsp;</em>Indicates a required field.</label>
+        </p>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="cui cui-full">
+        <h3 class="demo-heading" id="dividers">Dividers</h3>
+        <hr class="cui">
+    </div>
+    
+    <div class="cui cui-column-c">
+        <h3 class="demo-heading" id="headings">Headings</h3>
+        <h1 class="cui">Site Heading</h1>
+        <h2 class="cui">Hero Headings</h2>
+        <h3 class="cui">Section Headings</h3>
+        <h4 class="cui">Paragraph Headings</h4>
+        <h5 class="cui">Supporting Headings A</h5>
+        <h6 class="cui">Supporting Headings B</h6>
+    </div>
+        
+    
+    <div class="cui cui-column-c">
+        <h3 class="demo-heading" id="paragraphs">Paragraphs</h3>
+        <p class="cui">
+            Paragraph text (also referred to as "body copy") looks like this. <em>Always</em> wrap body copy and inline phrase elements (below) in <code>&lt;p&gt;</code> tags when using CUI styles. <em>Don't</em> use <code>&lt;br&gt;</code> tags to separate content between elements; instead use <code>&lt;p&gt;</code> tags to separate bodies of copy, and use CSS to position other elements on the page. <code>&lt;br&gt;</code> tags should only be used to create line breaks between inline elements.
+        </p>
+        <p class="cui">
+            Do not use multiple <code>&lt;br&gt;</code> tags to create larger line breaks; instead, use CSS to increase the margins on the elements you wish to separate. To adjust the size of a line break within bodies of copy, use the <code>line-height</code> CSS property.
+        </p>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="cui cui-column-c">
+        <h3 class="demo-heading" id="phrases">Phrase Elements</h3>
+        <p class="cui">
+            CUI includes styles for the following formatted phrase tags: <code>&lt;em&gt;</code> <code>&lt;strong&gt;</code>, as well as the following semantical phrase tags: <code>&lt;address&gt;</code> <code>&lt;abbr&gt;</code> <code>&lt;code&gt;</code>. To use CUI styles for <em>inline</em> phrase elements, simply add the <code>cui</code> class to the parent container.
+        </p>
+        <p>CUI supports the following inline formatting:</p>
+        <p class="cui">
+            An example of <em>emphasized text</em>.<br>
+            An example of <strong>bold text</strong>.
+        </p>
+    </div>
+    
+    <div class="cui cui-column-c">
+        <h3 class="demo-heading" id="formatting">Semantic Formatting</h3>
+        <p>Display addresses like this:</p>
+        <address class="cui">
+            Getable, Inc.<br>
+            500 Sansome Street #504<br>
+            San Francisco, CA 94111<br>
+            <a href="mailto:info@getable.com">info@getable.com</a>
+        </address>
+        <p class="cui">
+            Abbreviate words like <em>point-of-sale</em> like this: <abbr title="Point of Sale">POS</abbr>.<br>
+            Show code examples like this: <code>clear:both;</code>.
+        </p>
+    </div>
+    <div class="clear"></div>
+    
+    <h4 class="cui" style="margin-top:40px;">Grids &amp; Layout</h4>
+    <hr class="cui">
+    <div class="cui cui-column-b">
+        <h3 class="demo-heading" id="columns">Columns</h3>
+        <p class="cui">
+        In CUI, the grid layout is completely non-semantical. By avoiding the use of descriptive class names like <code>.col-left</code>, the markup will never become compromised if a developer chooses to move a <code>.col-left</code> element to the <em>right</em> side of the page &mdash; for example.
+        </p>
+        <p class="cui">
+         Unlike other grid systems, there is no concept of pre-defined column dimensions in CUI &mdash; which also compromise the semantic integrity of the markup. For example, if a developer chooses to make a column with the classes <code>.four.column</code> wider than a column with the classes <code>.twelve.column</code> in CSS, the column names can quickly become quite confusing.
+        </p>
+    </div>
+    <div class="clear"></div>
+    <div class="cui">
+        <div class="demo-grid demo-grid-a">
+            <span>Grid Column A</span>
+        </div>
+        <div class="clear"></div>
+        <div class="demo-grid demo-grid-b">
+            <span>Grid Column B</span>
+        </div>
+        <div class="demo-grid demo-grid-e">
+            <span>Grid Column E</span>
+        </div>
+        <div class="clear"></div>
+        <div class="demo-grid demo-grid-e">
+            <span>Grid Column E</span>
+        </div>
+        <div class="demo-grid demo-grid-b">
+            <span>Grid Column B</span>
+        </div>
+        <div class="clear"></div>
+        <div class="demo-grid demo-grid-c">
+            <span>Grid Column C</span>
+        </div>
+        <div class="demo-grid demo-grid-c">
+            <span>Grid Column C</span>
+        </div>
+        <div class="clear"></div>
+        <div class="demo-grid demo-grid-d">
+            <span>Grid Column D</span>
+        </div>
+        <div class="demo-grid demo-grid-d">
+            <span>Grid Column D</span>
+        </div>
+        <div class="demo-grid demo-grid-d">
+            <span>Grid Column D</span>
+        </div>
+        <div class="clear"></div>
+        <div class="demo-grid demo-grid-f">
+            <span>Grid Column F</span>
+        </div>
+        <div class="demo-grid demo-grid-f">
+            <span>Grid Column F</span>
+        </div>
+        <div class="demo-grid demo-grid-f">
+            <span>Grid Column F</span>
+        </div>
+        <div class="demo-grid demo-grid-f">
+            <span>Grid Column F</span>
+        </div>
+        <div class="demo-grid demo-grid-f">
+            <span>Grid Column F</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="cui">
+        <h3 class="demo-heading" id="containers">Containers</h3>
+        <div class="cui">
+            <aside class="demo-container demo-container-b">
+                <hgroup>
+                    <h5 class="cui">Container B</h5>
+                    <button class="cui cui-container-toggle">-</button>
+                </hgroup>
+                <section class="cui">
+                    <p class="cui">
+                        Container text goes here.
+                    </p>
+                </section>
+            </aside>
+            <aside class="demo-container demo-container-e">
+                <hgroup>
+                    <h5 class="cui">Container E</h5>
+                    <button class="cui cui-container-toggle">-</button>
+                </hgroup>
+                <section class="cui">
+                    <p class="cui">
+                        Sidebar text.
+                    </p>
+                </section>
+            </aside>
+            <div class="clear"></div>
+            <aside class="demo-container demo-container-e">
+                <hgroup>
+                    <h5 class="cui">Container E</h5>
+                    <button class="cui cui-container-toggle">-</button>
+                </hgroup>
+                <section class="cui">
+                    <p class="cui">
+                        Sidebar text.
+                    </p>
+                </section>
+            </aside>
+            <aside class="demo-container demo-container-b">
+                <hgroup>
+                    <h5 class="cui">Container B</h5>
+                    <button class="cui cui-container-toggle">-</button>
+                </hgroup>
+                <section class="cui">
+                    <p class="cui">
+                        Container text goes here.
+                    </p>
+                </section>
+            </aside>
+            <div class="clear"></div>
+            <aside class="demo-container demo-container-d">
+                <hgroup>
+                    <h5 class="cui">Container D</h5>
+                    <button class="cui cui-container-toggle">-</button>
+                </hgroup>
+                <section class="cui">
+                    <p class="cui">
+                        Sidebar text.
+                    </p>
+                </section>
+            </aside>
+            <aside class="demo-container demo-container-d">
+                <hgroup>
+                    <h5 class="cui">Container D</h5>
+                    <button class="cui cui-container-toggle">-</button>
+                </hgroup>
+                <section class="cui">
+                    <p class="cui">
+                        Center text goes here.
+                    </p>
+                </section>
+            </aside>
+            <aside class="demo-container demo-container-d">
+                <hgroup>
+                    <h5 class="cui">Container D</h5>
+                    <button class="cui cui-container-toggle">-</button>
+                </hgroup>
+                <section class="cui">
+                    <p class="cui">
+                        Sidebar text.
+                    </p>
+                </section>
+            </aside>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+    
+<!-- COMING TO CUI 1.2: TABS, ACCORDIONS, MODAL DIALOGS, PAGE NOTIFICATIONS (ERRORS) -->
+<!-- COMING TO CUI 1.5: GLOBAL ICONS, BUTTON ICON SUPPORT, PROGRESS BARS -->
+
+<script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://code.jquery.com/jquery-1.8.1.min.js"><\/script>')</script>
+</body>
+</html>
